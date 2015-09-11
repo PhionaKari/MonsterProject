@@ -10,7 +10,7 @@ public class MonsterController
 	
 	public MonsterController()
 	{
-		String name = "a name that would pretty pretty Spooky";
+		String name = "a name that would be deemed pretty Spooky";
 		int eyes = 20;
 		int noses = 12;
 		double legs = 2;
