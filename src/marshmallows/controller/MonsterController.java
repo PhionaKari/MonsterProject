@@ -1,25 +1,29 @@
 package marshmallows.controller;
 
 import marshmallows.model.MarshmallowMonster;
+import marshmallows.view.MonsterDisplay;
+
 public class MonsterController
 {
 	private MarshmallowMonster stormMonster; 
+	private MonsterDisplay myDisplay;
 	
-
 	public MonsterController()
 	{
-		String name = "";
-		int eyes = 2;
-		int noses = 0;
-		double legs = 2.0;
+		String name = "a name that would pretty pretty Spooky";
+		int eyes = 20;
+		int noses = 12;
+		double legs = 2;
 		double hair = 1.0;
 		boolean hasBellyButton = true;
 		
-		stormMonster = new MarshmallowMonster(name, eyes, noses, hasBellyButton, hair, legs);
+		myDisplay = new MonsterDisplay();
+		stormMonster = new MarshmallowMonster(name, eyes, noses, hasBellyButton, legs, hair);
 	}
 	
 	public void start()
 	{
-		
+		myDisplay.displayInfo(stormMonster.toString());
 	}
+	
 }
