@@ -8,13 +8,12 @@ public class MarshmallowMonster
 	private double monsterLegs;
 	private double monsterHair;
 	private boolean monsterBellyButton;
-	
-	
+
 	private MarshmallowMonster()
 	{
-		
+
 	}
-	
+
 	public MarshmallowMonster(String monsterName, int monsterEyes, int monsterNoses, boolean monsterBellyButton, double monsterLegs, double monsterHair)
 	{
 		this.monsterName = monsterName;
@@ -24,12 +23,37 @@ public class MarshmallowMonster
 		this.monsterHair = monsterHair;
 		this.monsterLegs = monsterLegs;
 	}
+
+	public String getMonsterName()
+	{
+		return monsterName;
+	}
+
+	public int getMonsterEyes()
+	{
+		return monsterEyes;
+	}
+
+	public void setMonsterName(String monsterName)
+	{
+		this.monsterName = monsterName;
+	}
+
+	public void setMonsterEyes(int monsterEyes)
+	{
+		this.monsterEyes = monsterEyes;
+	}
 	
+	public int getMonsterNoses()
+	{
+		return monsterNoses;
+	}
+
 	public String toString()
 	{
-		String monsterInfo = "My monster has " + monsterLegs + " legs, " + monsterNoses + " noses, " + monsterEyes + " eyes, and his name is " + monsterName; 
-		
+		String monsterInfo = "My monster has " + monsterLegs + " legs, " + monsterNoses + " noses, " + monsterEyes + " eyes, and his name is " + monsterName;
+
 		return monsterInfo;
-	
+
 	}
 }
