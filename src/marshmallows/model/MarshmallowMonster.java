@@ -5,7 +5,7 @@ public class MarshmallowMonster
 	private String monsterName;
 	private int monsterEyes;
 	private int monsterNoses;
-	private double monsterLegs;
+ 	private double monsterLegs;
 	private double monsterHair;
 	private boolean monsterBellyButton;
 
@@ -49,6 +49,11 @@ public class MarshmallowMonster
 		return monsterNoses;
 	}
 
+	public double getMonsterLegs()
+	{
+		return monsterLegs;
+	}
+	
 	public String toString()
 	{
 		String monsterInfo = "My monster has " + monsterLegs + " legs, " + monsterNoses + " noses, " + monsterEyes + " eyes, and his name is " + monsterName;
